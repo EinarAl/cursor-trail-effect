@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -7,14 +8,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-suced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* .textDisplay {
+  font-weight: 600;
+  font-size: 280px;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  pointer-events: none;
+  opacity: 0.1;
+} */
+.svg1 {
+  pointer-events: none;
+  font-size: 8em;
+  font-weight: 600;
+  font-family: Dm Mono;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #ffffff; 
+  opacity: 1;
+  /* text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.svg1 rect {
+  fill: rgb(255, 255, 255);
+  mask: url(#mask)
+}
+.svg1 > rect { 
+  fill : #000000;
+  opacity: 0.1;
+}
+#svgTwo {
+  pointer-events: none;
+  font-size: 8em;
+  font-weight: 1000;
+  font-family: Dm Mono;
+  font-style: italic;
+  text-transform: uppercase;
+  /* text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#svgTwo rect {
+  fill: rgb(255, 255, 255);
+  mask: url(#mask3)
+}
+#svgTwo > rect { 
+  fill : rgb(0, 0, 0);
+  opacity: 0.85;
+}
+#svgThree {
+  pointer-events: none;
+  font-size: 7.75em;
+  font-weight: 450;
+  font-family: Dm Mono;
+  font-style: italic;
+  text-transform: uppercase;
+  /* text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.textFillToggle {
+  fill: rgb(255, 255, 255);
+  opacity: 1;
+}
+.textFillToggle:hover {
+  opacity: 0;
+}
+#svgThree rect {
+  fill: white;
+  mask: url(#mask2)
+}
+#svgThree > rect { 
+  fill : rgb(0, 0, 0);
+  opacity: 0.45;
 }
