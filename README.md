@@ -1,17 +1,19 @@
-# cursor-trail-effect
+# Cursor Trail Effect
 
-Interactive cursor trail particle effects built with React and HTML5 Canvas.
+Interactive iridescent splash cursor with WebGL fluid simulation. Move your mouse across the screen, the cursor leaves a fluid like trail with cycling hues. An SVG text mask (Learn / Innovate / Lead) cuts through the effect.
 
-Move your mouse across the screen to generate ripples, flames, water ripples, and a reflective scanning line. Colors cycle through an HSL spectrum.
+Built with React 18, TypeScript, and raw WebGL. Ported from reactbits.dev's SplashCursor.
 
-Built with React, rendered on canvas with `requestAnimationFrame` for smooth 60fps animation.
+## Usage
 
-## Available Scripts
+```bash
+npm install
+npm start       # dev server at localhost:3000
+npm run build   # production build
+```
 
-- `npm start` - runs the app in development mode
-- `npm test` - launches test runner
-- `npm run build` - builds for production
+## Architecture
 
-## License
-
-MIT
+- `src/SplashCursor.tsx` - WebGL fluid simulation, iridescent hue cycling, pointer tracking
+- `src/App.tsx` - SplashCursor + three line SVG text cutout overlay
+- CRA 5, no router, no extra deps beyond react-scripts and three.js (used for math utilities)
